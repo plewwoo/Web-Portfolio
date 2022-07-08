@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100%;
+    background-color: salmon;
+    display: flex;
+}
+.logo{
+    width: 40%;
+    text-align: center;
+    margin-top: 5px;
+}
+.logo img{
+    width: 150px;
+}
+.menu-bar{
+    width: 60%;
+    display: flex;
+}
+.menu-bar ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.menu-bar li{
+    font-weight: 500;
+}
+
+.menu-bar li .button-lang{
+    background-color: salmon;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.menu-bar a{
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.content{
+    max-width: 1250px;
+    margin : auto;
+}
+
+.pic-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-box img{
+    width: 1250px;
+}
+
+.button-box .left-button{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    margin-left: 100px;
+}
+
+.button-box .right-button{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    margin-right: 100px;
+}
+
+.button-box button{
+    background-color: salmon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.work-space{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+}
+
+.left-work{
+    width: 25%;
+    display: flex;
+    cursor: pointer;
+}
+
+.right-work{
+    width: 75%;
+    display: flex;
+}
+
+.work1{
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work1 img{
+    width: 200px;
+    padding: 5px;
+}
+
+.web{
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.web img{
+    padding: 5px;
+    width: 350px;
+}
+
+.toolbar{
+    cursor: pointer;
+    margin-left: 30px;
+}
+.toolbar img{
+    width: 70px;
+}
+
+.share{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 100px;
+}
+
+.share p {
+    text-align: center;
+}
+
+button{
+    background-color: salmon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.design{
+    width: 600px;
+    margin: auto;
+}
+.design img{
+    width: 100%;
+}
+.design-web{
+    width: 1000px;
+    margin: auto;
+}
+.design-web img{
+    width: 100%;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    margin-right: 30px;
+}
+
+.page img{
+    width: 100px;
+}
+
+footer{
+    margin-top: 30px;
+    border-top: 1px solid rgb(128, 128, 128);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.bottom-menu{
+    border-top: 1px solid rgb(128, 128, 128);
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.box ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.box .menu-name{
+    color: red;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.box a{
+    color: black;
+    text-decoration: none;
+}

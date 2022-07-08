@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Image/logo.png" alt="fb">
+            </div>
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="2.html">หน้าแรก</a></li>
+                    <li><a href="port-thai.html">พอร์ตฟอลิโอ</a></li>
+                    <li><a href="web-thai.html">เว็บไซต์ พอร์ตฟอลิโอ</a></li>
+                    <li><a href="resume-thai.html">เรซูเม่</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="work-space">
+        <div class="left-work">
+            <div class="work1">
+                <img src="image/temp1.jpg" alt="1" onclick="imgchange('image/temp1.jpg');changepage('image/temp1.jpg')">
+                <img src="image/temp2.jpg" alt="1" onclick="imgchange('image/temp2.jpg');changepage('image/temp2.jpg')"> 
+                <img src="image/temp3.jpg" alt="1" onclick="imgchange('image/temp3.jpg');changepage('image/temp3.jpg')">
+                <img src="image/temp4.jpg" alt="1" onclick="imgchange('image/temp4.jpg');changepage('image/temp4.jpg')">
+                <img src="image/temp5.jpg" alt="1" onclick="imgchange('image/temp5.jpg');changepage('image/temp5.jpg')">
+                <img src="image/temp6.jpg" alt="1" onclick="imgchange('image/temp6.jpg');changepage('image/temp6.jpg')">
+            </div>
+        </div>
+        <div class="right-work">
+            <div class="toolbar">
+                <img src="image/toolbar.png" alt="">
+            </div>
+            <div class="design">
+                <img class="space" src="image/temp5.jpg" alt="1">
+            </div>
+            <div class="page">
+                <img class="r-page" src="image/temp5.jpg" alt="1">
+            </div>
+        </div>
+    </div>
+
+    <div class="share">
+        <button id="myBtn">แชร์</button>
+
+        <div id="myModal" class="modal">
+            
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>แชร์</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function imgchange(anything){
+            document.querySelector('.space').src = anything;
+        }
+
+        function changepage(anything){
+            document.querySelector('.r-page').src = anything;
+        }
+
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

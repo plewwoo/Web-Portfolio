@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Image/logo.png" alt="fb">
+            </div>
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="1.html">Home</a></li>
+                    <li><a href="port.html">Portfolio</a></li>
+                    <li><a href="web.html">Website Portfolio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><button class="button-lang"><a href="2.html">TH</a></button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="pic-box">
+            <a href="port.html"><img src="image/port.jpg" alt=""></a>
+        </div>
+        <div class="pic-box">
+            <a href="web.html"><img src="image/web.jpg" alt=""></a>
+        </div>
+        <div class="pic-box">
+            <a href="resume.html"><img src="image/resume.jpg" alt=""></a>
+        </div>
+        <div class="button-box">
+            <button class="left-button" onclick="plusDivs(-1)">&#10094; Prev</button>
+            <button class="right-button" onclick="plusDivs(1)">Next &#10095;</button>
+        </div>
+    </div>
+
+    <!-- <div class="bottom-menu">
+        <div class="box">
+            <ul>
+                <li class="menu-name">Type of work</li>
+                <li><a href="#">Design</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <ul>
+                <li class="menu-name">Features</li>
+                <li><a href="#">Chart</a></li>
+                <li><a href="#">Photo Editing</a></li>
+                <li><a href="#">Printing</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <ul>
+                <li class="menu-name">Product</li>
+                <li><a href="#">Portable Devices</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <ul>
+                <li class="menu-name">About Us</li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Terms and Privacy</a></li>
+            </ul>
+        </div>
+    </div> -->
+    <footer>
+        <span>Copyright 2020</span>
+    </footer>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("pic-box");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+</body>
+</html>

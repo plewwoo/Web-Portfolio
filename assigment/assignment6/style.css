@@ -1,0 +1,44 @@
+body{
+    background-color: salmon;
+    font-family: 'Kanit', sans-serif;
+    color: teal;
+}
+
+legend{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+fieldset{
+    background-color: white;
+    width: 750px;
+    font-size: 25px;
+    font-weight: 800;
+    margin: auto;
+    text-align: left;
+}
+input{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn input{
+    width: 50%;
+}
+
+.submitbtn, .resetbtn{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    color:  teal;
+    margin-right: 10px;
+    background-color: salmon;
+}

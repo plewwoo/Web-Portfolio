@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Image/logo.png" alt="fb">
+            </div>
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="1.html">Home</a></li>
+                    <li><a href="port.html">Portfolio</a></li>
+                    <li><a href="web.html">Website Portfolio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="work-space">
+        <div class="left-work">
+            <div class="work1">
+                <img src="image/resume1.png" alt="1" onclick="imgchange('image/resume1.png');changepage('image/resume1.png')">
+                <img src="image/resume2.png" alt="1" onclick="imgchange('image/resume2.png');changepage('image/resume2.png')"> 
+                <img src="image/resume3.png" alt="1" onclick="imgchange('image/resume3.png');changepage('image/resume3.png')">
+                <img src="image/resume4.png" alt="1" onclick="imgchange('image/resume4.png');changepage('image/resume4.png')">
+                <img src="image/resume5.png" alt="1" onclick="imgchange('image/resume5.png');changepage('image/resume5.png')">
+                <img src="image/resume6.png" alt="1" onclick="imgchange('image/resume6.png');changepage('image/resume6.png')">
+            </div>
+        </div>
+        <div class="right-work">
+            <div class="toolbar">
+                <img src="image/toolbar.png" alt="">
+            </div>
+            <div class="design">
+                <img class="space" src="image/resume1.png" alt="1">
+            </div>
+            <div class="page">
+                <img class="r-page" src="image/resume1.png" alt="1">
+            </div>
+        </div>
+    </div>
+
+    <div class="share">
+        <button id="myBtn">Share</button>
+
+        <div id="myModal" class="modal">
+            
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Share</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function imgchange(anything){
+            document.querySelector('.space').src = anything;
+        }
+
+        function changepage(anything){
+            document.querySelector('.r-page').src = anything;
+        }
+
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+</html>
